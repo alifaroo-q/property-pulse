@@ -1,3 +1,4 @@
+import React from "react";
 import "@/assets/styles/globals.css";
 
 export const metadata = {
@@ -6,7 +7,11 @@ export const metadata = {
   keywords: "rental, find rentals, find properties",
 };
 
-const MainLayout = ({ children }) => {
+type Props = {
+  children: React.ReactNode;
+};
+
+const MainLayout = ({ children }: Props) => {
   return (
     <html lang="en">
       <body>
